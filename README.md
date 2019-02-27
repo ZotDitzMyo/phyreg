@@ -35,11 +35,11 @@ phyreg 0 27
 PHY=00 REG=27 : IDLE READ  ACK 1010-0000-0000-1010
 ```
 
-The output is in binary, seporated into nibbles to make it easier to read. Bit 15 on the left, bit 0 on the right.
+The output is in binary, separated into nibbles to make it easier to read. Bit 15 on the left, bit 0 on the right.
 
 ### Write a register on an attached PHY....
 
- Here wer are writing the binary value 1000-0000-0000-0000 (which is 0x8000) to register 0 on PHY at address 0...
+ Here we are writing the binary value 1000-0000-0000-0000 (which is 0x8000) to register 0 on PHY at address 0...
 
 ```
 phyreg 0 0 1000-0000-0000-0000
@@ -56,12 +56,12 @@ PHY=00 REG=00 : IDLE WRITE ACK 1000-0000-0000-0000 (DATA 1000-0000-0000-0000)
 
 This is exactly the same as the command above. 
 
--Note that this command happens to execute a soft reset on the attached PHY if implements the IEEE
+-Note that this command happens to execute a soft reset on the attached PHY if it implements the IEEE
 802.3 (clause 22.2.4) management register set.-
 
 ### Dump all registers
 
-You can also automatically dump all registers of an attached PHY but not putting a register on the command line...
+You can also automatically dump all registers of an attached PHY by not putting a register on the command line...
 
 ```
 phyreg 0
@@ -99,7 +99,7 @@ PHY=00 REG=30 : IDLE READ  ACK 0000-0000-0000-0000
 PHY=00 REG=31 : IDLE READ  ACK 0001-0000-0101-1000
 ```
 
-This is just a short cut for manually reading each register one at a time, and it hand for doing a diff to see which registers changed. 
+This is just a shortcut for manually reading each register one at a time, and is handy for doing a diff to see which registers changed. 
 
 ## Install
 
