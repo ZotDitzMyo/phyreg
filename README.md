@@ -22,11 +22,9 @@ LINK  ADDRESSES:0000-0000-0000-0001
 Here is a single PHY at address 2 and it currently does not have an active link...
 ```
 phyreg
-ALIVE ADDRESSES:0000-0000-0000-0001
+ALIVE ADDRESSES:0000-0000-0000-0100
 LINK  ADDRESSES:0000-0000-0000-0001
 ```
-
-(sorry, I only have one PHY on my machine, so can't show an example of two PHY attached, but there would be '1's for each PHY)
 
 ### Read a register from an attached PHY...
 
